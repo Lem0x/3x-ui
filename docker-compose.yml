@@ -5,6 +5,8 @@ services:
   3x-ui:
     image: ghcr.io/mhsanaei/3x-ui:latest
     container_name: 3x-ui
+    ports:
+      - 2053
     volumes:
       - ../file/db/:/etc/x-ui/
       - ../file/cert/:/root/cert/
